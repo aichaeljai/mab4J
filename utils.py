@@ -339,24 +339,3 @@ def add_entity(driver, subject, object_, relation):
                 }
             )
             
-            # # Requête 1 : doublon SpecificityClass
-            # session.run(
-            #     """
-            #     MATCH (n)-[r:isSpecificityClassOf]->(m)
-            #     MATCH (n)-[r2:inTaxon]->(t)
-            #     REMOVE n:SpecificityClass:Target
-            #     SET n:SpecificityClass
-            #     RETURN n, r, r2, m, t;
-            #     """
-            # )
-            #
-            # # Requête 2 : doublon ClinicalIndication
-            # session.run(
-            #     """
-            #     MATCH (n)-[r:isClinicalIndicationOf]->(m)
-            #     MATCH (n)-[r2:hasClinicalDomain]->(t)
-            #     REMOVE n:ClinicalIndication:ClinicalDomain
-            #     SET n:ClinicalIndication
-            #     RETURN n, r, r2, m, t;
-            #     """
-            # )
