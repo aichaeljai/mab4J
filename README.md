@@ -1,4 +1,5 @@
-# IMGT/mAb4J Data Integration
+# From IMGT/mAb-KG to IMGT/mAb4J: Transition from an RDF graph to a property graph
+
 
 This project extracts data from the IMGT/mAb-KG knowledge graph, processes it in Python, and loads it into a Neo4j property graph (IMGT/mAb4J).
 
